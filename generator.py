@@ -18,9 +18,13 @@ def gen_time():
         yield 2
 
 
-g = gen_time()
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
+def test():
+    print('start')
+    while True:
+        x = yield
+        print('значение: ', x)
+
+
+g = test()
+next(g)
+g.send('yyyyy')
