@@ -1,3 +1,5 @@
+# https://dvmn.org/encyclopedia/python_intermediate/python_callbacks/
+
 import time
 
 
